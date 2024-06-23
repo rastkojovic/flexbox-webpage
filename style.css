@@ -1,0 +1,275 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  width: 100%;
+  flex: 1 0 auto;
+}
+
+.green-box {
+  box-sizing: border-box;
+  background-color: #52b256;
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #333333;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar > a {
+  flex-grow: 1;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  padding: 15px;
+}
+
+.navbar > a:hover {
+  background-color: #494949;
+}
+
+.main-image {
+  width: 100%;
+  height: 300px;
+  background-color: #cccccc;
+  background-image: url("https://picsum.photos/4000/300");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome {
+  background-color: #333333;
+  border-radius: 10px;
+  padding: 15px;
+  flex-basis: content;
+  opacity: 85%;
+  color: white;
+  text-align: center;
+}
+
+.welcome > h1 {
+  font-size: 1.9rem;
+}
+
+.welcome > button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 0.7rem;
+  border: none;
+  border-radius: 3px;
+  padding: 1em;
+}
+
+.welcome > button:hover {
+  cursor: pointer;
+  background-color: #337e34;
+}
+
+.main-content-container {
+  display: flex;
+  margin: 0 auto;
+  width: 98%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+.main-content,
+.left-sidebar,
+.right-sidebar,
+.article,
+.latest-articles-container,
+.testimonials-container {
+  box-shadow: 1px 0px 4px #dbdada;
+}
+
+.left-sidebar,
+.right-sidebar {
+  font-size: 0.9rem;
+  background-color: #e3f2fd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+}
+
+.ul-title {
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.left-sidebar > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.left-sidebar li {
+  line-height: 1.6rem;
+  font-weight: bold;
+}
+
+.left-sidebar li > a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.right-sidebar > ul {
+  padding-left: 15px;
+}
+
+.right-sidebar li:first-of-type {
+  list-style: none;
+  line-height: 1.8rem;
+}
+
+.newsletter-form-input {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.newsletter-form-input > input,
+.newsletter-form-input > button {
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.newsletter-form-input > button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  padding: 0.4em;
+  margin-top: 5px;
+}
+
+.newsletter-form-input > button:hover {
+  cursor: pointer;
+  background-color: #2f7732;
+}
+
+.newsletter-form-input > input {
+  border: none;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  padding: 0.4em;
+}
+
+.newsletter-form-input > input:focus {
+    outline: 2px solid #1976d2;
+}
+
+.newsletter-form > p {
+  padding-left: 15px;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+  padding: 15px 15px 15px 20px;
+  font-size: 0.9rem;
+}
+
+.main-content ul {
+  padding-left: 0;
+}
+
+.main-content img {
+  border-radius: 10px;
+}
+
+.latest-articles-container {
+  width: 98%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.article {
+  flex-grow: 1;
+  flex-basis: 30%;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.article > img {
+  border-radius: 5px;
+}
+
+.article > a {
+  text-decoration: none;
+  color: #4caf50;
+}
+
+.article > a:hover {
+  color: #327434;
+}
+
+.testimonials-container {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+
+.testimonials-container > div {
+  background-color: #ffffff;
+  box-shadow: 1px 0px 4px #dbdada;
+  padding: 13px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.testimonials-container p {
+  margin: 0;
+}
+
+footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 100%;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 10px 0;
+}
+
+.socials > a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.socials > a:hover {
+  color: #cccccc;
+}
