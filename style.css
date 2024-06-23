@@ -95,6 +95,24 @@ body {
   margin-top: 20px;
   margin-bottom: 40px;
   gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+  .main-content-container {
+    align-items: center;
+  }
+
+  .left-sidebar, .main-content {
+    text-align: center;
+  }
+
+  .left-sidebar, .right-sidebar {
+    order: -1;
+    flex: 1;
+    height: 300px;
+  }
+
 }
 
 .main-content,
