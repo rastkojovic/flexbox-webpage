@@ -3,6 +3,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
+  min-width: 375px; /* Prevents sidebar content going out of bounds */
 }
 
 body {
@@ -110,7 +111,7 @@ body {
   .left-sidebar, .right-sidebar {
     order: -1;
     flex: 1;
-    height: 300px;
+    height: 340px; /* Kako se smanjuje stranica tako content izlazi van okvira */
   }
 
 }
